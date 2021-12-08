@@ -9,7 +9,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 
 import java.util.List;
 
-// Spring DataRest
+// Spring DataRest //
 @RepositoryRestResource
 public interface CompteRepository extends JpaRepository<Compte, Long> {
 

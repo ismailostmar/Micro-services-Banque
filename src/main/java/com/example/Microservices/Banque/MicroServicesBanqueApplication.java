@@ -24,7 +24,7 @@ public class MicroServicesBanqueApplication {
 	CommandLineRunner start(CompteRepository compteRepository , RepositoryRestConfiguration restConfiguration,
 							ClientRepository clientRepository){
 		return args -> {
-			restConfiguration.exposeIdsFor(Compte.class); // si on veut exposer le ID de notre Entité
+			restConfiguration.exposeIdsFor(Compte.class); // si on veut exposer le ID de notre Entité //
 			Client c1 = clientRepository.save(new Client(null,"ISMAIL",null));
 			Client c2 = clientRepository.save(new Client(null,"ALI",null));
 			compteRepository.save(new Compte(null,Math.random()*9000, new Date(), TypeCompte.EPARGNE , c1));

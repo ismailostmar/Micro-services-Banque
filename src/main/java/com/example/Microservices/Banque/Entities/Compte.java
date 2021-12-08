@@ -9,7 +9,7 @@ import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;
 
-@XmlRootElement // Annotations permet de générer un resultat en XML
+@XmlRootElement // Annotations permet de générer un resultat en XML //
 @Entity
 @Data
 @AllArgsConstructor @NoArgsConstructor @ToString
